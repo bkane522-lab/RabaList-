@@ -6,23 +6,16 @@ RabaList analyse ta liste de courses et compare les prix chez Leclerc, Lidl, Car
 
 ## Stack
 - React + Vite
-- PWA (installable sur mobile)
-- Claude API (Anthropic)
-
-## Lancer en local
-
-```bash
-npm install
-cp .env.example .env
-# Ajouter ta clé Anthropic dans .env
-npm run dev
-```
+- Groq API (llama-3.3-70b-versatile) — gratuit
+- Déployé sur Vercel
 
 ## Déployer sur Vercel
 
-1. Push sur GitHub
-2. Importer le repo sur Vercel
-3. Ajouter `VITE_ANTHROPIC_API_KEY` dans les variables d'environnement
+1. Push ce repo sur GitHub
+2. Importer sur vercel.com
+3. Ajouter la variable d'environnement :
+   - Name : `VITE_GROQ_KEY`
+   - Value : ta clé Groq (console.groq.com)
 4. Deploy ✅
 
 ## Auteur
